@@ -12,9 +12,6 @@ public class Login extends Frame implements ActionListener
 	Font f1,f2;
 	public Login()
 	{
-		//setTitle("Login Screen");
-		//g = new GridLayout(4,2,0,60);
-		//setLayout(g);
 		setBackground(Color.cyan);
 		f1 = new Font("TimesRoman",Font.BOLD,20);
         f2 = new Font("TimesRoman",Font.BOLD,15);
@@ -32,7 +29,7 @@ public class Login extends Frame implements ActionListener
 		t1 = new TextField(15);
 		t2 = new TextField(15);
 		t2.setEchoChar('*');
-		//b1 = new Button("Change Login Details");
+		
 		b2 = new Button("Reset");
         b2.setFont(f2);
 		b3 = new Button("Submit");
@@ -103,24 +100,13 @@ public class Login extends Frame implements ActionListener
 		add(b4);
 
 
-		//add(l1);
-		//add(t1);
-		//add(l2);
-		//add(t2);
-		//add(b1);
-		//add(b2);
-		//add(b3);
-		//add(b4);
-		//b1.addActionListener(this);
+		
 		b2.addActionListener(this);
 		b3.addActionListener(this);
 		b4.addActionListener(this);
 	}
 
-	/*public Insets getInsets()
-	{
-		return new Insets(40,40,40,40);
-	}*/
+	
 	public void actionPerformed(ActionEvent ae)
 	{
 		if(ae.getSource()==b2)
@@ -144,21 +130,12 @@ public class Login extends Frame implements ActionListener
 			}
 			else
 			{
-				//Warning w = new Warning();
-				//w.setSize(300,200);
-				//w.setVisible(true);
-				//w.setTitle("Message Box");
+				
 				MessageBox mb = new MessageBox(this);
 				mb.setLocation(200,200);
 				mb.setVisible(true);
             }
 		}
-		/*if(ae.getSource() == b1)
-		{
-			Change c = new Change();
-			c.setSize(400,400);
-			c.setVisible(true);
-			c.setTitle("Screen for Changing Login Details");
-		}*/
+		
 	}
 }
