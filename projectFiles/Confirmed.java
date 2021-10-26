@@ -12,7 +12,7 @@ public class Confirmed extends Frame
 		public void windowClosing(WindowEvent e)
 		{
 			setVisible(false);
-			//dispose();
+			
 			System.exit(0);
 			
 		}
